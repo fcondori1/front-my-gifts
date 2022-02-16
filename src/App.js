@@ -7,15 +7,17 @@ import GiftsCreate from './components/GiftsCreate/GiftsCreate';
 import Signup from './components/Signup/Signup';
 
 function App() {
-  return (
-    <div className="App">
-      <Navigation />
-      <Login />
-      <Gifts />
-      <GiftsCreate />
-      <Signup />
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Navigation />
+			<Routes>
+				<Route path='/' element={<Login />} />
+				<Route path='/gifts' element={<Gifts />} />
+				<Route path='/giftscreate' element={<GiftsCreate />} />
+				<Route path='/signup' element={<Signup />} />>
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
