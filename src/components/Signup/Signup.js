@@ -6,19 +6,16 @@ function Signup(props) {
 	return (
 		<>
 			<form className={styles.container}>
-				<h1>Sign-In</h1>
-				<label>Username:</label>
-				<input type='text' placeholder='Enter Username' />
+				<h1>Sign-Up</h1>
 				<label>Email:</label>
 				<input type='text' placeholder='Enter Email' />
+				<label>Username:</label>
+				<input type='text' placeholder='Enter Username' />
 				<label>Password:</label>
 				<input type='text' placeholder='Enter Password' />
 				<label>Re-enter Password:</label>
 				<input type='text' placeholder='Enter Password' />
-				<button type='submit'>Login</button>
-				<button type='submit'>
-					<Link to='/signup'>sign up</Link>
-				</button>
+				<button type='submit'>Sign-up</button>
 			</form>
 		</>
 	);
