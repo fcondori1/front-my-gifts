@@ -6,6 +6,7 @@ import Gifts from './components/Gifts/Gifts';
 import GiftsCreate from './components/GiftsCreate/GiftsCreate';
 import Signup from './components/Signup/Signup';
 import Welcome from './components/Welcome/Welcome';
+import Main from './components/Main/Main';
 
 function App() {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Welcome />} />
 				<Route path='/signup' element={<Signup />} />
+				<Route path='/main' element={<Main />} />
 				<Route path='/login' element={<Login />} />
 				<Route path='/gifts' element={<Gifts />} />
 				<Route path='/giftscreate' element={<GiftsCreate />} />
