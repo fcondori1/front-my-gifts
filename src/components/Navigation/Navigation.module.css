@@ -1,0 +1,52 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	background-color: #0077b6;
+	position: relative;
+}
+
+.nav_welcome {
+	color: #caf0f8;
+    align-items: center;
+}
+
+a:link {
+	text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+
+}
+
+
+.menuNav {
+	overflow-y: scroll;
+	list-style: none;
+	position: fixed;
+	top: 0;
+	background: #03045E;
+	left: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100;
+	overflow: hidden;
+	max-width: 290px;
+	z-index: 9;
+    display: flex;
+    flex-direction: column;
+    color: #caf0f8;
+}
+
+.navBtn {
+	position: fixed;
+	left: 40px;
+	top: 40px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.navList {
+    list-style: none;
+    color: white;
+}

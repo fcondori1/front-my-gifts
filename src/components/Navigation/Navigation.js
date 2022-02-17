@@ -14,13 +14,10 @@ function Navigation(props) {
 	return (
 		<>
 			<nav>
-				<Link to='/'>
-					<h1 className={styles.nav_welcome}>Hello User</h1>
-				</Link>
 				<div className={styles.menuNav}>
-					<button className={styles.nav} onClick={handleToggle}>
+					<button className={styles.navBtn} onClick={handleToggle}>
 						{navbarOpen ? (
-							<GrClose style={{ width: '30px', height: '30px ' }} />
+							<GrClose style={{ width: '100%', height: '30px ' }} />
 						) : (
 							<GrMenu style={{ width: '30px', height: '30px' }} />
 						)}
@@ -28,19 +25,32 @@ function Navigation(props) {
 					<ul
 						style={{ display: navbarOpen ? 'flex' : 'none' }}
 						className='menuNav'>
-						<li>
-							<Link className='navLink' to='/'>
+						<li className={styles.navList}>
+							<Link className='navLink' to='/main'>
 								Home
 							</Link>
 						</li>
-						<li>
+						<li className={styles.navList}>
 							<Link className='navLink' to='/about'>
 								About
 							</Link>
 						</li>
+						<li className={styles.navList}>
+							<Link className='navLink' to='/login'>
+								Login
+							</Link>
+						</li>
+						<li className={styles.navList}>
+							<Link className='navLink' to='/signup'>
+								Sign-up
+							</Link>
+						</li>
 					</ul>
-					<p>logged in as user</p>
+					{/* <p>logged in as user</p> */}
 				</div>
+				<Link to='/main'>
+					<h1 className={styles.nav_welcome}>Hello User</h1>
+				</Link>
 			</nav>
 		</>
 	);
