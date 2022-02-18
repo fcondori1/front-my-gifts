@@ -3,3 +3,17 @@ Install Frontend Dependencies
     - react-dom
     - react-router-dom
     - navigate
+    - react-calendar
+    - react-bootstrap
+    - react-icon
+    - react-moment
+
+Components
+    - App
+    - Welcome
+    - Main
+    - Login
+    - Signup
+    - Navigation
+    - Profiles
+    - GiftsCreate
