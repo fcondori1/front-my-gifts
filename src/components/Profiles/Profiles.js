@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import API_URL from '../../apiConfig';
 import styles from './Profiles.module.css';
 
-const Profiles = ({ loggedIn }) => {
+const Profiles = () => {
 	const [profiles, setProfiles] = useState([]);
 
 	const getProfilesIndex = async () => {

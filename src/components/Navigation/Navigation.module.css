@@ -1,9 +1,6 @@
 nav {
-	/* display: flex;
-	flex-direction: row; */
 	background-color: hsl(201, 100%, 36%);
 	position: static;
-	/* height: 100%; */
 	font-family: 'Fira Mono', monospace;
 }
 
@@ -16,30 +13,14 @@ nav {
 	margin-top: 0%;
 	margin-bottom: 0%;
 	display: flex;
-
-	/* margin-bottom: 0%; */
-	/* top: 0; */
-}
-
-a {
-	/* border: solid red 10px; */
-}
-
-.head {
-	color: aliceblue;
-	text-decoration: none;
 }
 
 .menuNav {
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	/* list-style: none; */
 	position: absolute;
 	background: #03045e;
-	/* top: 50;
-	left: 50;
-	bottom: 50; */
 	height: 100vh;
 	width: 100;
 	overflow: hidden;
@@ -86,4 +67,71 @@ ul {
 	display: flex;
 	flex-direction: column;
 	height: 500px;
+}
+
+.landing_phrase {
+	animation: glitch 1s linear infinite;
+	color: aliceblue;
+	text-decoration: none;
+}
+
+@keyframes glitch {
+	5%,
+	65% {
+		transform: translate(2px, 0) skew(0deg);
+	}
+	5%,
+	60% {
+		transform: translate(-2px, 0) skew(0deg);
+	}
+	65% {
+		transform: translate(0, 0) skew(5deg);
+	}
+}
+
+.landing_phrase:before,
+.landing_phrase:after {
+	content: attr(title);
+	position: absolute;
+	left: 0;
+}
+
+.landing_phrase:before {
+	animation: glitchTop 1s linear infinite;
+	clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+	5%,
+	65% {
+		transform: translate(2px, -2px);
+	}
+	5%,
+	60% {
+		transform: translate(-2px, 2px);
+	}
+	65% {
+		transform: translate(13px, -1px) skew(-13deg);
+	}
+}
+
+.landing_phrase:after {
+	animation: glitchBotom 1.5s linear infinite;
+	clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+	5%,
+	65% {
+		transform: translate(-2px, 0);
+	}
+	5%,
+	60% {
+		transform: translate(-2px, 0);
+	}
+	65% {
+		transform: translate(-22px, 5px) skew(21deg);
+	}
 }

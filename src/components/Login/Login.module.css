@@ -1,6 +1,38 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    border: solid black 1px;
-    margin: 40% 10%;
+	display: flex;
+	flex-direction: column;
+	border: solid black 1px;
+	margin: 20% 10%;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.signup_title {
+	margin-left: 10px;
+}
+
+.signup_text {
+	width: 80%;
+	margin: 5px;
+}
+
+.label {
+	margin: 5px;
+}
+
+.signup_btn {
+	margin-top: 10px;
+	width: auto;
+	height: auto;
+	align-items: center;
+	text-align: center;
+	background-color: rgb(186, 204, 252);
+}
+
+.link_btn {
+	text-decoration: none;
+}
+
+.link_btn:visited {
+	color: black;
 }
