@@ -34,13 +34,13 @@ As a user I want to have a calendar that has upcoming holidays
 
 ### Installation
 
-Open your terminal and navigate to your directory where you want to store the repository using cd 
-On the GitHub repository, copy the "HTTPS" or "SSH" key.
-On your terminal use git clone "SSH" or "HTTPS".
-cd into the directory
-run npm install to install dependencies
-open in VScode using code .
-to run the frontend locally, run npm start
+- Open your terminal and navigate to your directory where you want to store the repository using cd 
+- On the GitHub repository, copy the "HTTPS" or "SSH" key.
+- On your terminal use git clone "SSH" or "HTTPS".
+- cd into the directory
+- run npm install to install dependencies
+- open in VScode using code .
+- to run the frontend locally, run npm start
 
 ### Wireframes
 
