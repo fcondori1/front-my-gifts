@@ -15,7 +15,7 @@ function Navigation(props) {
 		<>
 			<nav>
 				<h1 className={styles.nav_welcome}>
-					<Link className={styles.head} to='/main'>Hello User</Link>
+					<Link className={styles.landing_phrase } to='/main'>Hello!</Link>
 				</h1>
 				<div className={styles.menuNav}>
 					<button className={styles.navBtn} onClick={handleToggle}>
@@ -48,11 +48,11 @@ function Navigation(props) {
 								Profiles
 							</Link>
 						</li>
-						<li className={styles.navList}>
+						{/* <li className={styles.navList}>
 							<Link className={styles.navLink} to='/about'>
 								About
 							</Link>
-						</li>
+						</li> */}
 					</ul>
 					{/* <p>logged in as user</p> */}
 				</div>

@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import API_URL from '../../apiConfig';
 import styles from './Signup.module.css';
 
@@ -54,8 +54,9 @@ const Signup = () => {
 	return (
 		<>
 			<form onSubmit={_handleSignup} className={styles.container}>
-				<h1>Sign-Up</h1>
-				<label>Email:</label>
+				<h1 className={styles.sign}>Sign-Up</h1>
+				<h4>Let's create your account!</h4>
+				<label className={styles.label}>Email:</label>
 				<input
 					required
 					autoFocus
@@ -66,7 +67,7 @@ const Signup = () => {
 					placeholder='Enter Email'
 					className={styles.signup_text}
 				/>
-				<label>Username:</label>
+				<label className={styles.label}>Username:</label>
 				<input
 					required
 					autoFocus
@@ -77,7 +78,7 @@ const Signup = () => {
 					placeholder='Enter Username'
 					className={styles.signup_text}
 				/>
-				<label>Password:</label>
+				<label className={styles.label}>Password:</label>
 				<input
 					required
 					type='password'
@@ -87,7 +88,7 @@ const Signup = () => {
 					placeholder='Enter Password'
 					className={styles.signup_text}
 				/>
-				<label>Re-enter Password:</label>
+				<label className={styles.label}>Confirm Password:</label>
 				<input
 					required
 					type='password'
@@ -95,7 +96,7 @@ const Signup = () => {
 					value={formData.re_password}
 					onChange={handleChange}
 					onBlur={handlePasswordMatch}
-					placeholder='Enter Password'
+					placeholder='Confirm Password'
 					className={styles.signup_text}
 				/>
 				<button type='submit' className={styles.signup_btn}>

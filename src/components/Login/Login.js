@@ -10,7 +10,6 @@ const Login = ({ handleSetLoggedIn }) => {
 	};
 	const navigate = useNavigate();
 	const [formData, setFormData] = useState(initialFormData);
-	const [error, setError] = useState(false);
 
 	const handleChange = (event) => {
 		setFormData((prevState) => {
@@ -36,7 +35,6 @@ const Login = ({ handleSetLoggedIn }) => {
 				console.log(data.auth_token);
 				navigate('/');
 			} else {
-				setError(true);
 			}
 		} catch (err) {
 			console.log(err);
@@ -46,29 +44,29 @@ const Login = ({ handleSetLoggedIn }) => {
 		<>
 			<form onSubmit={_handleLogin} className={styles.container}>
 				<h1 className={styles.signup_title}>Sign-In</h1>
-				<label>Email:</label>
+				<label className={styles.label}>Email:</label>
 				<input
 					required
 					type='email'
 					value={formData.email}
 					onChange={handleChange}
-					// placeholder='Enter Email'
+					placeholder='Enter Email'
 					className={styles.signup_text}
 				/>
-				<label>Password:</label>
+				<label className={styles.label}>Password:</label>
 				<input
 					required
 					type='password'
 					value={formData.password}
 					onChange={handleChange}
-					// placeholder='Enter Password'
+					placeholder='Enter Password'
 					className={styles.signup_text}
 				/>
 				<button type='submit' className={styles.signup_btn}>
 					Login
 				</button>
 				<button type='submit' className={styles.signup_btn}>
-					<Link to='/signup'>sign up</Link>
+					<Link className={styles.link_btn} to='/signup'>Sign-up</Link>
 				</button>
 			</form>
 		</>

@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap';
 import API_URL from '../../apiConfig';
 import styles from './GiftsCreate.module.css';
 
-const GiftsCreate = ({ loggedIn }) => {
+const GiftsCreate = () => {
 	const [profiles, setProfiles] = useState([]);
 	const [info, setInfo] = useState([]);
 
