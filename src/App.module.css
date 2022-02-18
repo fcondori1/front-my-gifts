@@ -1,0 +1,17 @@
+.app {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  /* background-color: blue; */
+}
+html {
+  /* background-color: yellow; */
+  height: 100%;
+}
+
+main {
+	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1200px;
+}

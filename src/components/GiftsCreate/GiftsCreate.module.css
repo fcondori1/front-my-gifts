@@ -1,0 +1,32 @@
+.image {
+	width: 100px;
+}
+
+.image_block {
+	display: flex;
+	flex-direction: row;
+}
+
+.profiles {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* .block {
+    display: flex;
+    flex-direction: row;
+} */
+
+.profile_name {
+}
+
+li {
+	list-style: none;
+}
+
+.profile {
+	margin: 20px;
+	padding: 10px;
+	border: solid black 1px;
+}

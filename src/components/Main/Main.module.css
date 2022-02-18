@@ -1,0 +1,23 @@
+.cal {
+	/* background-color: red; */
+	display: flex;
+	flex-direction: column;
+	font-family: 'Fira Mono', monospace;
+}
+
+.cal_obj {
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.calendar {
+	background-color: #CAF0F8;
+}
+
+.para {
+	padding: 10px;
+	margin: 10px;
+	border: solid rgb(180, 180, 180) .5px;
+}
