@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Welcome.module.css';
+import './Welcome.css';
 
 function Welcome(props) {
 	return (
-		<div className={styles.landing}>
-			<h1 className={styles.landing_intro}>Welcome to</h1>
-			<div className={styles.landing_phrase}>My Gifts</div>
+		<div className='landing'>
+			<h1 className='landing_intro'>Welcome to</h1>
+			<div className='landing_phrase animate__animated animate__pulse animate__infinite'>
+				My Gifts
+			</div>
 			<Link to='/main'>
-				<button className={styles.landing_btn}>Enter</button>
+				<button className='landing_btn animate__animated animate__fadeInUpBig'>
+					Enter
+				</button>
 			</Link>
 		</div>
 	);

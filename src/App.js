@@ -9,6 +9,7 @@ import Signup from './components/Signup/Signup';
 import Welcome from './components/Welcome/Welcome';
 import Main from './components/Main/Main';
 import API_URL from './apiConfig';
+import 'animate.css';
 
 function App() {
 	const { pathname } = useLocation();

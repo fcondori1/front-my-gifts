@@ -1,0 +1,39 @@
+.landing {
+	display: flex;
+	flex-direction: column;
+	height: 12em;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	padding: 10px;
+	background: #01024d;
+	color: rgb(225, 241, 255);
+	font-size: 50px;
+	font-family: 'Fira Mono', monospace;
+}
+
+.landing_intro {
+	font-size: 20px;
+}
+
+.landing_btn {
+	border-radius: 12px;
+	background-color: #484bff;
+	color: white;
+	padding: 5px 12px;
+	border: 2px solid white;
+	transition-duration: 0.4s;
+}
+
+.landing_btn:hover {
+	background-color: #4caf50;
+	color: white;
+}
+
+.animate__animated.animate__pulse.animate__infinite {
+  --animate-duration: 3s;
+}
+
+/* .animate__animated.animate__heartbeat.animate__infinite:hover {
+  --animate-duration: 2s;
+} */
